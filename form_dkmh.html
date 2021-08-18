@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Đăng kí môn học</title>
+	<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="easyui.css">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="jquery.easyui.min.js"></script>
+  <script src="functionapp.js"></script>
+</head>
+<body>
+  <div class="container">  
+    <form id="contact" action="" method="post">
+      <h3>Form đăng kí môn học</h3>
+      <h4>Điền thông tin đăng kí</h4>
+      <fieldset>
+        <input id="CurriculumID" placeholder="Mã môn học vd: LLCT120405" type="text" tabindex="2" required>
+      </fieldset>
+      <fieldset>
+        <input id="ClassID" placeholder="STT lớp học vd: 06" type="text" tabindex="3" required>
+      </fieldset>
+      <fieldset>
+        <input id="NoCredit" placeholder="Số tín chỉ. vd: 3.00" type="text" tabindex="4" required>
+      </fieldset>
+      <fieldset>
+        <input id="UserCookie" placeholder="SessionID của bạn" type="text" tabindex="5" required>
+      </fieldset>
+      <fieldset>
+        <input id="UnitID" placeholder="Học kì đăng kí: vd HKI 2021 = 211" type="text" tabindex="5" required>
+      </fieldset>
+      <fieldset>
+        <input id="HocLai" placeholder="Tích vào đây nếu bạn học lại!" type="checkbox" tabindex="6">
+        <label for="HocLai">Tích vào đây nếu bạn học lại!"</label>
+      </fieldset>
+      <fieldset>
+        <button type="button" onclick="submitFrm()" id="contact-submit" >Submit</button>
+      </fieldset>
+      <p class="copyright">Designed by <a href="https://colorlib.com" target="_blank" title="Colorlib">Colorlib</a></p>
+    </form>
+  </div>
+</body>
